@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #031540;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    padding-bottom: 10px;
+}
+
+.navbar a:hover{
+    color: #00abf0;
+}
+
+body{
+    background-image: linear-gradient(to left, #031540 , #fff);
+    /*background: #031540;*/
+    color: #fff;
+}
+
+.intro{
+    height: 100vh;
+    background-image: linear-gradient(to left, #031540 , #fff);
+    padding: 50px 5%;
+    font-size: 22px;
+    padding-top: 150px;
+    
+}
+
+.achievements{
+    text-align: center;
+    padding-top: -50px;
+    padding-left: -20px;
+    
+}
+
+.box{
+    text-align: center;
+    padding-top: 80px; 
+}
+
+.btn{
+    margin-right: 30px;
+    padding: 12px 35px;
+    background: transparent;
+    /*border-radius: 40px;*/
+    font-size: 17px;
+    color: #fff;
+    font-size: larger;
+    text-shadow: 5px 5px 4px #031540;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #031540;
+    padding: 50px 60px 50px 60px;
+    transition: .5s;
+}
+
+.btn:hover{
+    box-shadow: 0 12px 16px 0 #031540,0 17px 50px 0 #031540;
+}
+
+/*---------------------------INTERNSHIP-----------------------*/
+
+.internimg{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+.features{
+    padding: 50px 10%;
+    font-size: 22px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color:#0d1a3a;
+}
+
+.features h3{
+    font-weight: 600;
+    margin-bottom: 5px;
+    color:#0d1936df;
+}
+
+.features h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color:#0d1936df;
+}
+
+
+/*------------------------CERTIFICATES-----------------------*/
+
+.certificateimg{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.content_img{
+    position: relative;
+    width: 470px;
+    height: 450px;
+    float: left;
+    margin-right: 10px;
+    padding-left: 90px;
+    padding-bottom: 100px;
+
+}
+
+.content_img div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top:0;
+    background: rgba(13, 7, 62, 0.8);
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img:hover{
+    cursor: pointer;
+}
+
+.content_img:hover div{
+    width: 380px;
+    height: 350px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.95; 
+}
+
+/*-----------------------Projects---------------------------*/
+
+.projectimg{
+    text-align: center;
+}
+
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #28284b;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordian .content{
+    background: #28284b;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+
+
+/*-----------------------FOOTER--------------------*/
+
+
+.box1{
+    text-align: center;
+}
+

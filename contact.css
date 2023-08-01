@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo{
+    font-size: 25px;
+    color: #031540;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    padding-bottom: 10px;
+}
+
+.navbar a:hover{
+    color: #00abf0;
+}
+
+body{
+    background-image: linear-gradient(to left, #031540 , #fff);
+    /*background: #031540;*/
+    color: #fff;
+}
+
+.img{
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+
+
+
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 70px 60px;
+}
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.card img{
+    width: 100%;
+    height:270px;
+    padding-bottom: 10px;
+}
+
+.card:hover{
+    box-shadow: 0 12px 16px 0 #031540,0 17px 50px 0 #031540;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container h2{
+    color: #031540;
+    text-align: center;
+    padding-bottom: 17px;
+}
+
+  
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+.title {
+    color: grey;
+  }
+
